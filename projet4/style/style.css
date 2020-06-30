@@ -1,0 +1,111 @@
+
+body {
+    font-family: Montserrat, "times new roman", times, serif;
+}
+
+footer{
+    background-color: #4E4F50;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* INDEX */
+.title-cover-author {
+    background-color: #4E4F50 !important;
+}
+
+.cover-and-title{
+    position: relative;
+}
+
+.booktitle{
+    position: absolute !important;
+    top: 20px !important;
+    left: 20px !important;
+}
+
+h2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.chapter{
+    background-color: #4E4F50 !important;
+    margin-bottom: 50px;
+}
+
+.page-link{
+    color: white;
+    border-color: #6c757d;
+    background-color: #343a40;
+
+}
+
+
+/* PAGE CHAPITRE COMPLET */
+
+.full-chapter {
+    background-color: #4E4F50 !important;
+    color: white;
+    padding-bottom: 75px;
+}
+
+.chapter-text{
+    margin-top: 2em;
+    padding: 3em;
+    line-height: 3em;
+}
+
+#post-comment-title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.comments-list{
+    margin-top: 50px;
+}
+
+#pseudo-comment{
+    font-weight: bold;
+}
+
+
+/* LOGIN */
+
+.login-form {
+    color: white;
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* PAGE ADMIN */
+
+.admin-table{
+    background-color: #4E4F50;
+}
+
+.add-chapter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.admin-table-comment-title{
+    margin-top: 50px;
+}
+.admin-table-comment-title + table{
+    margin-top: 50px;
+}
+
+/* ADMIN CREATION MODIFICATION DE CHAPTRIES */
+.admin-chapter{
+    background-color: #4E4F50;
+}
+
+.admin-chapter label{
+    color: white;
+}
+/* Bouton choix image*/
+.custom-file-input{
+    opacity: 1;
+}
