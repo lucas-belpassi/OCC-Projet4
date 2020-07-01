@@ -27,6 +27,9 @@ class Chapters extends Controller{
         // Méthode pour afficher les commentaires
         $comments = $this->Comment->findByIdChapter($number);
 
+        //Méthode pour signaler un commentaire
+        $this->Comment->reportComment();
+
         $this->render('read', compact('chapter', 'comments', 'commentMsg'));
     }
 }

@@ -20,6 +20,7 @@ if ($params[0] != "") {
     //On récup le premier en controller
     $controller = ucfirst($params[0]);
 
+    var_dump(__DIR__);
     // Si le deuxieme paramètre existe on le récupère sinon on va chercher index
     $action = isset($params[1]) ? $params[1] : 'index';
 

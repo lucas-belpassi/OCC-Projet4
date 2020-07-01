@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -61,24 +65,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Des envies d'ailleurs</td>
-                                <td><button class="btn btn-secondary my-2 my-sm-0" type="button">Accéder</button></td>
-                                <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Mes débuts en Alaska</td>
-                                <td><button class="btn btn-secondary my-2 my-sm-0" type="button">Accéder</button></td>
-                                <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Rencontre innoubliable</td>
-                                <td><button class="btn btn-secondary my-2 my-sm-0" type="button">Accéder</button></td>
-                                <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
-                            </tr>
+                            <?php foreach ($chapters as $chapter) : ?>
+                                <tr>
+                                    <td><?php echo $chapter['number'] ?></td>
+                                    <td><?php echo $chapter['title'] ?></td>
+                                    <td><button class="btn btn-secondary my-2 my-sm-0" type="button">Accéder</button></td>
+                                    <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>
@@ -102,24 +96,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Mali13</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</td>
-                                <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Hellohelloman</td>
-                                <td>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</td>
-                                <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Carlito</td>
-                                <td>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                                <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
-                            </tr>
+                            <?php foreach ($comments as $comments) : ?>
+                                <tr>
+                                    <td><?php echo $comments['id_chapter'] ?></td>
+                                    <td><?php echo $comments['pseudo'] ?></td>
+                                    <td><?php echo $comments['content'] ?></td>
+                                    <td><button class="btn btn-danger my-2 my-sm-0" type="button">Supprimer</button></td>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

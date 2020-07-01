@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <a href="login.php" target="_blank"><button class="btn btn-outline-secondary my-2 my-sm-0" type="button">Connexion</button></a>
+                        <a href="http://localhost/projet4/index.php?p=admin/login"><button class="btn btn-outline-secondary my-2 my-sm-0" type="button">Connexion</button></a>
                     </form>
                 </div>
             </nav>
@@ -50,17 +50,17 @@
                 <div class="login-form bg-dark border border-primary">
                     <div class="row">
                         <div class="col-md-8 offset-2">
-                            <form>
+                            <form method="POST">
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="login-email">
+                                    <input type="email" class="form-control" name="mail" id="login-email">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Mot de passe</label>
-                                    <input class="form-control" id="login-password"></input>
+                                    <input class="form-control" name="password" id="login-password"></input>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-light">Connexion</button>
+                                    <input type="submit" name="adminformconnection" class="btn btn-light" value="Connexion"></input>
                                 </div>
                             </form>
                         </div>

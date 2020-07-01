@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <a href="login.php" target="_blank"><button class="btn btn-outline-secondary my-2 my-sm-0" type="button">Connexion</button></a>
+                        <a href="http://localhost/projet4/index.php?p=admin/login"><button class="btn btn-outline-secondary my-2 my-sm-0" type="button">Connexion</button></a>
                     </form>
                 </div>
             </nav>

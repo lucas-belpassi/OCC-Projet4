@@ -46,12 +46,14 @@ class Comment extends Model
         }
     }
 
-    // public function reportComment(){
-    //     $id_comment = 
-    //     if (isset($_POST['submit_report_comment'])){
-
-    //     }
-
-    // }
+    public function reportComment()
+    {
+        if (isset($_POST['report_comment'])) {
+            $id_comment = $_POST['report_comment'];
+            $sql = "UPDATE comments SET reported=1 WHERE id_comment=" . $id_comment;
+            $query = $this->_connexion->prepare($sql);
+            $query->execute();
+        }
+    }
 
 }
